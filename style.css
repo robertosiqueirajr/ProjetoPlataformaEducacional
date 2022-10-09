@@ -70,5 +70,35 @@ header{
     color: aliceblue;
 }
 
+#banner_principal{
+    display: flex;
+    
+}
+
+#banner_principal img{
+    width: 2500px;
+    height: 800px;
+    
+}
+
+#banner_principal h1{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    left: 3%;
+    font-size: 60px ;    
+}
+
+#banner_principal button{
+    position: absolute;
+    background-color: yellow;
+    border-radius: 10px;
+    width: 250px;
+    top: 60%;
+    right: 40%;
+    left: 15%;
+    font-size: 30px ;    
+}
+
 
 
