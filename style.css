@@ -49,6 +49,10 @@ header{
     color: aliceblue;
 }
 
+#menu_superior li a:hover{
+    color: black;
+}
+
 #selecao_aluno{
     list-style: none;
     float: left;
