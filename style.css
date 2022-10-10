@@ -7,7 +7,7 @@ header{
     display: flex;
     width: 100%;
     height: 60px;
-    position: fixed;
+    position: relative;
 }
 
 #img_logo {
@@ -102,7 +102,7 @@ header{
 }
 
 #banner_principal h1{
-    position: absolute;
+    position:absolute;;
     top: 20%;
     right: 40%;
     left: 3%;
@@ -124,7 +124,149 @@ header{
     transform: scale(1.2);
 }
 
+.principal h1{
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+}
+
+.principal h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    color: #1D1111;
+}
+
+.selecao_instrumentos {
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    float: left;
+    color: aliceblue;
+    font-size: 20px;
+   
+}
 
 
+.selecao_instrumentos ul{
+    list-style: none;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
 
+}
 
+.selecao_instrumentos ul li{
+    position: relative;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.selecao_instrumentos ul li a{
+    text-decoration: none;
+    color: #685F5F;
+}
+
+.selecao_instrumentos ul li a:hover{
+    color: black;
+}
+
+/*css sobre nós */
+
+#banner-sobre-nos img{
+    width: 100%;
+    height: auto;
+}
+
+#banner-sobre-nos h1{
+    color: #C21C44;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+    font-family: "roboto";
+}
+
+#banner-sobre-nos p{
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: "roboto";
+}
+
+#estudar-na-best-song{
+    background-color: #C21C44;
+    border-radius: 5px;
+    size: 500px;
+    position: absolute;
+    left: 33%;
+    top: 1020px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "roboto";
+}
+
+#icones1{
+    display: flex;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 480px;
+    
+}
+
+#icones2{
+    display: flex;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 520px;
+    
+}
+
+#icones1 img {
+    
+    width: 100px;
+    
+}
+
+#icones2 img{
+    width: 100px;
+}
+
+#praticidade{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 290px;
+}
+#acessivel{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+#didatica{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 300px;
+}
+#no-seu-ritmo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#icones1 h1, #icones2 h1{
+    color: #C21C44;
+    font-family: "roboto";
+    
+}
