@@ -8,8 +8,9 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="/style.css">
 
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <link href="style.css" rel="stylesheet">
   <link href="page.css" rel="stylesheet">
   </link>
   <title>Contato
@@ -20,12 +21,12 @@
       padding: 0;
       padding-bottom: 50px;
       margin: 0;
-      margin-top: 50px;
+      margin-top: 100px;
       /* background-color: #be2525; */
     
     }
 
-    h1,
+    /* h1,
     h2,
     h3,
     h4,
@@ -51,27 +52,27 @@
 
     h2 {
       font-size: 30px;
-    }
+    } */
 
     #header {
-      height: 100vh;
+      /* height: 100vh;
       padding: 0 24px;
-      position: relative;
+      position: relative; */
     }
 
     #header .welcome-title {
-      top: 50%;
+      /* top: 50%;
       transform: translateY(-50%);
-      position: absolute;
+      position: absolute; */
     }
 
-    #header .imagem-header {
+    /* #header .imagem-header {
       width: 369px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 0;
-    }
+    } */
 
     #header .title {
       font-size: 52px;
@@ -95,33 +96,37 @@
     #footer h3 {
       float: right;
     }
+    /* #nav {
+      position: fixed;
+      margin-top: 0px;
+    } */
   </style>
 </head>
 
-<body background=img/banner.png>
-  <header>
-    <img id="img_logo" src="/img/logo.png" alt="logo">
-
-    <input id="pesquisa_menu" type="text">
-    <nav >
-        <ul id="menu_superior">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/sobrenos.html">Sobre Nós</a></li>
-            <li><a href="/contato.html">Contato</a></li>
-        </ul>
-
-        <ul id="selecao_aluno">
-            <li><a href="#">Aluno</a></li>
-        </ul>
-    </nav>
+<header>
+  <img id="img_logo" src="/img/logo.png" alt="logo">
+  
+  <input id="pesquisa_menu" type="text">
+  <nav >
+    <ul id="menu_superior">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/sobrenos.html">Sobre Nós</a></li>
+      <li><a href="/contato.html">Contato</a></li>
+    </ul>
+    
+    <ul id="selecao_aluno">
+      <li><a href="#">Aluno</a></li>
+    </ul>
+  </nav>
 </header>
+<body background=img/banner.png>
 
   <main id="main">
 
     <section id="sobre">
 
-      <h2>Contato</h2>
-      <p>AQUI SEU INSTRUMENTO SERÁ BEM CUIDADO</p>
+      <h2>Fale Conosco</h2>
+      <p></p>
       <!-- <img class="section-image" src="hotdog2.jpeg"> -->
       <form class="row g-3" action="outro.html">
 
@@ -154,8 +159,33 @@
             <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select">
                 <option selected>Estado</option>
+                <option>São Paulo</option>
                 <option>Piauí</option>
                 <option>Maranhão</option>
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Espirito Santo</option>
+                <option>Goiás</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraná</option>
+                <option>Paraíba</option>
+                <option>Pernambuco</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>Sergipe</option>
+                <option>Totantins</option>
+                <option>DF</option>
             </select>
         </div>
 
@@ -197,7 +227,10 @@
   </main>
 
   <footer id="footer" class="footer-fixo">
-        <h3>Não compre, adote um cachorro no <a href="https://www.amigonaosecompra.com.br/">Amigo não se compra</a></h3>
+        <!-- <h3>Não compre, adote um cachorro no <a href="https://www.amigonaosecompra.com.br/">Amigo não se compra</a></h3> -->
+        <h3>
+          <img src="/img/INSTA.png"
+        </h3>
   </footer>
 
 </body>
