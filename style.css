@@ -172,9 +172,9 @@ header{
 
 #banner-sobre-nos p{
     position: relative;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
     font-size: 20px;
     font-family: "roboto";
 }
@@ -182,15 +182,15 @@ header{
 #estudar-na-best-song{
     background-color: #C21C44;
     border-radius: 5px;
-    size: 500px;
-    position: absolute;
-    left: 33%;
-    top: 1020px;
+    position: relative;
+    padding: 0.8%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-align: center;
     color: white;
     font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
     font-family: "roboto";
 }
 
@@ -199,8 +199,8 @@ header{
     width: 30%;
     text-align: center;
     position: relative;
-    top: 100px;
-    left: 480px;
+    top: 30%;
+    left: 28%;
 
 }
 
@@ -209,44 +209,92 @@ header{
     width: 30%;
     text-align: center;
     position: relative;
-    top: 100px;
-    left: 520px;
+    top: 30%;
+    left: 30%;
 
 }
 
 #icones1 img {
 
-    width: 100px;
+    width: 50%;
 
 }
 
 #icones2 img{
-    width: 100px;
+    width: 60%;
 }
 
 #praticidade{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 290px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 70%;
 }
 #acessivel{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 80%;
 }
 #didatica{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 300px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 80%;
 }
 #no-seu-ritmo{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
 }
 
 #icones1 h1, #icones2 h1{
     color: #C21C44;
     font-family: "roboto";
+    
 
 }
+
+/* perguntas frequentes*/
+
+.pergunta {
+    border-bottom: 0.5% solid #ccc;
+    padding: 1.5%;
+    background-color: #EDEDED;
+    border-radius: 5px;
+    margin: 2%;
+    padding-right: 8%;
+  }
+  
+  .pergunta input,
+  .pergunta .resposta { 
+    display: none;
+    font-family: "roboto";
+    padding: 0.5%;
+
+}
+  
+  .pergunta label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 0,5%;
+    width: 100%;
+    color: #C21C44;
+    font-family: "roboto";
+    
+  }
+  
+  .pergunta input:checked ~ .resposta {
+    display: block
+  }
+
+  #duvidas-frequentes h1{
+    font-family: "roboto";
+    color: #C21C44;
+    margin: 2%;
+  }
+
+  .pergunta img{
+    width: 25px;
+    padding-left: 80%;
+    
+  }
+
+  
