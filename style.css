@@ -1,14 +1,16 @@
 /* css pagina inicial  */
 body{
     margin: 0px;
+    padding: 0px;
 }
 
 header{
+    box-sizing: border-box;
     background-color: #C21C44;
     display: flex;
-    width: 100%;
-    height: 60px;
-    position: relative;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #img_logo {
@@ -17,36 +19,30 @@ header{
 }
 
 #pesquisa_menu{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: 600px;
+    width: 500px;
     height: 35px;
     border-radius: 50px;
     border: 0px;
-    margin-left: 100px;
 }
 
 #menu_superior{
-    margin-top: 10px;
-    margin-left: 100px;
+    display: flex;
     list-style: none;
-    float: left;
-    color: aliceblue;
-    font-size: 20px;
+    gap: .5rem;
 
 }
 
 #menu_superior li{
     position: relative;
-    float: left;
     padding: 10px;
-    text-decoration: none;
     text-transform: uppercase;
 }
-    
+
 
 #menu_superior li a{
     text-decoration: none;
+    display: block;
+    padding: .5rem;
     color: aliceblue;
 }
 
@@ -54,52 +50,72 @@ header{
     color: black;
 }
 
-#selecao_aluno{
-    list-style: none;
-    float: left;
-    color: aliceblue;
-    font-size: 20px;
-   
-
+#btn-mobile {
+    display: none;
 }
 
-#selecao_aluno li{
-    
-    padding: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
+
+#main{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+@media(max-width: 800px){
 
-#selecao_aluno li a{
-    position: absolute;
-    border: 1px solid beige;
-    padding: 3px;
-    background-color: black;
-    top: 10px;
-    right: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: aliceblue;
-    width: 100px;
-    height: 20px;
+    #pesquisa_menu{
+        width: 40%;
+    }
+    #menu_superior{
+        display: block;
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: rgb(46, 134, 140);
+        transition: .6s;
+        height: 0px;
+        z-index: 10000;
+        visibility: hidden;
+        overflow-y: hidden;
 
-}
 
-#selecao_aluno li a:hover{
-    background-color: aliceblue;
-    color: rgb(21, 21, 24);
-    border: 1px solid black;
+    }
+
+    #nav.active #menu_superior{
+        height: 100vh;
+        visibility: visible;
+        overflow: auto;
+
+    }
+
+    #menu_superior li a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid black;
+    }
+
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        margin: 5px;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+
+    }
 }
 
 #banner_principal{
     display: flex;
-    
+
 }
 
 #banner_principal img{
-    width: 2500px;
-    height: 800px;
-    
+    width: 100%;
+    height: 100vh;
 }
 
 #banner_principal h1{
@@ -107,7 +123,7 @@ header{
     top: 20%;
     right: 40%;
     left: 3%;
-    font-size: 60px ;    
+    font-size: 60px ;
 }
 
 #banner_principal button{
@@ -118,7 +134,7 @@ header{
     top: 60%;
     right: 40%;
     left: 15%;
-    font-size: 30px ;    
+    font-size: 30px ;
 }
 
 #banner_principal button:hover{
@@ -138,46 +154,115 @@ header{
     color: #1D1111;
 }
 
-.selecao_instrumentos {
-    position: relative;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-    float: left;
-    color: aliceblue;
-    font-size: 20px;
-   
+
+#rodaPe{
+    background-color: #130f10;
+    width: auto;
+    height: 50px;
+    display: flex;
 }
 
+/* Tabela de menu */
 
-.selecao_instrumentos ul{
-    list-style: none;
-    padding: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
 
-}
 
-.selecao_instrumentos ul li{
-    position: relative;
-    float: left;
-    padding: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.selecao_instrumentos ul li a{
-    text-decoration: none;
-    color: #685F5F;
-}
-
-.selecao_instrumentos ul li a:hover{
-    color: black;
-}
 
 /*css sobre nós */
 
 #banner-sobre-nos img{
+    width: 100%;
+    height: auto;
+}
+
+#banner-sobre-nos h1{
+    color: #C21C44;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+    font-family: "roboto";
+}
+
+#banner-sobre-nos p{
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: "roboto";
+}
+
+#estudar-na-best-song{
+    background-color: #C21C44;
+    border-radius: 5px;
+    size: 500px;
+    position: absolute;
+    left: 33%;
+    top: 1020px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "roboto";
+}
+
+#icones1{
+    display: flex;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 480px;
+
+}
+
+#icones2{
+    display: flex;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 520px;
+
+}
+
+#icones1 img {
+
+    width: 100px;
+
+}
+
+#icones2 img{
+    width: 100px;
+}
+
+#praticidade{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 290px;
+}
+#acessivel{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+#didatica{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 300px;
+}
+#no-seu-ritmo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#icones1 h1, #icones2 h1{
+    color: #C21C44;
+    font-family: "roboto";
+
+}#banner-sobre-nos img{
     width: 100%;
     height: auto;
 }
@@ -220,15 +305,12 @@ header{
     width: 30%;
     text-align: center;
     position: relative;
-<<<<<<< HEAD
     top: 30%;
     left: 28%;
-
-=======
-    top: 100px;
-    left: 480px;
+    top: 30%;
+    left:30%;
     
->>>>>>> parent of 1617495 (Menu Mobile)
+
 }
 
 #icones2{
@@ -236,7 +318,6 @@ header{
     width: 30%;
     text-align: center;
     position: relative;
-<<<<<<< HEAD
     top: 30%;
     left: 30%;
 
@@ -245,8 +326,6 @@ header{
 #icones1 img {
 
     width: 50%;
-
-=======
     top: 100px;
     left: 520px;
     
@@ -254,9 +333,9 @@ header{
 
 #icones1 img {
     
-    width: 100px;
+    width: 30%;
     
->>>>>>> parent of 1617495 (Menu Mobile)
+
 }
 
 #icones2 img{
@@ -266,7 +345,7 @@ header{
 #praticidade{
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-right: 70%;
+    padding-right: 60%;
 }
 #acessivel{
     padding-top: 5%;
@@ -279,22 +358,21 @@ header{
     padding-right: 80%;
 }
 #no-seu-ritmo{
-<<<<<<< HEAD
+
     padding-top: 5%;
     padding-bottom: 5%;
 
-=======
     padding-top: 20px;
     padding-bottom: 20px;
     
->>>>>>> parent of 1617495 (Menu Mobile)
+
 }
 
 #icones1 h1, #icones2 h1{
     color: #C21C44;
     font-family: "roboto";
     
-<<<<<<< HEAD
+
 
 }
 
@@ -342,8 +420,3 @@ header{
     padding-left: 80%;
     
   }
-
-  
-=======
-}
->>>>>>> parent of 1617495 (Menu Mobile)
