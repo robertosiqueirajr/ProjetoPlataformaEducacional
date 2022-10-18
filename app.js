@@ -1,3 +1,4 @@
+// Menu mobile
 const btnMobile = document.getElementById('btn-mobile')
 
 const mobile = () => {
@@ -6,3 +7,4 @@ const mobile = () => {
 }
 
 btnMobile.addEventListener('click', mobile)
+

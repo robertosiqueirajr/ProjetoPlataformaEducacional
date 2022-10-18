@@ -59,54 +59,6 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-@media(max-width: 800px){
-
-    #pesquisa_menu{
-        width: 40%;
-    }
-    #menu_superior{
-        display: block;
-        position: absolute;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: rgb(46, 134, 140);
-        transition: .6s;
-        height: 0px;
-        z-index: 10000;
-        visibility: hidden;
-        overflow-y: hidden;
-
-
-    }
-
-    #nav.active #menu_superior{
-        height: 100vh;
-        visibility: visible;
-        overflow: auto;
-
-    }
-
-    #menu_superior li a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid black;
-    }
-
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        margin: 5px;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-
-    }
-}
 
 #banner_principal{
     display: flex;
@@ -119,11 +71,11 @@ header{
 }
 
 #banner_principal h1{
-    position:absolute;;
-    top: 20%;
+    position: absolute;
+    top: 35%;
     right: 40%;
     left: 3%;
-    font-size: 60px ;
+    font-size: 3em ;
 }
 
 #banner_principal button{
@@ -162,9 +114,100 @@ header{
     display: flex;
 }
 
-/* Tabela de menu */
+/* Seleção de cursos*/
+
+.selecaoDeCursos{
+    display: flex;
+    padding: 20px 100px 50px 100px;
+    justify-content:space-between;
+}
+.selecaoDeCursos div{
+    border-radius: 5px;
+    color: white;
+    background-color: #df718b;
+    -webkit-box-shadow: 1px -3px 8px -1px rgba(0,0,0,0.75); 
+    box-shadow: 1px -3px 8px -1px rgba(0,0,0,0.75);
+  
+}
 
 
+.selecaoDeCursos div p{
+    text-align: center;
+}
+
+.selecaoDeCursos div h3{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+.selecaoDeCursos div img{
+    width: 250px;
+    height: 150px;
+    border-radius: 3px;
+}
+
+.selecaoDeCursos div:hover{
+   transform: scale(1.02);
+}
+
+
+/* media de 800px */
+
+@media(max-width: 800px){
+
+    #pesquisa_menu{
+        width: 40%;
+    }
+
+    #menu_superior{
+        display: block;
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: rgb(46, 134, 140);
+        transition: .6s;
+        height: 0px;
+        z-index: 10000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu_superior{
+        height: 100vh;
+        visibility: visible;
+        overflow: auto;
+
+    }
+
+    #menu_superior li a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid black;
+    }
+
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        margin: 5px;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+
+    }
+
+    #banner_principal h1{
+        position: absolute;
+        top: 35%;
+        right: 40%;
+        left: 3%;
+        font-size: 2em ;
+    }
+
+}
 
 
 /*css sobre nós */
@@ -197,8 +240,8 @@ header{
     border-radius: 5px;
     size: 500px;
     position: absolute;
-    left: 33%;
-    top: 1020px;
+    /* left: 33%; */
+    /* top: 1020px; */
     text-align: center;
     color: white;
     font-size: 15px;
