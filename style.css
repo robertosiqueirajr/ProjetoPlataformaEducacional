@@ -106,13 +106,44 @@ header{
     color: #1D1111;
 }
 
+   /* Footer */
 
 #rodaPe{
-    background-color: #130f10;
-    width: auto;
-    height: 50px;
+    background-color: #C21C44;
     display: flex;
+    justify-content:space-between;
+    padding-left: 50px;
+    width: auto;
+    height: 200px;
 }
+
+#rodaPe img{
+    padding-top: 50px;
+    width: 10rem;
+    height: 8rem;
+}
+
+#rodaPe h3{
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#subMenu{
+    padding-top: 20px ;
+}
+#subMenu a{
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+    color: aliceblue
+}
+
+#subMenu a:hover{
+    color: #19191a;
+}
+
 
 /* Seleção de cursos*/
 
@@ -124,6 +155,7 @@ header{
 .selecaoDeCursos div{
     border-radius: 5px;
     color: white;
+    margin: 20px;
     background-color: #df718b;
     -webkit-box-shadow: 1px -3px 8px -1px rgba(0,0,0,0.75); 
     box-shadow: 1px -3px 8px -1px rgba(0,0,0,0.75);
@@ -207,6 +239,10 @@ header{
         font-size: 2em ;
     }
 
+    .selecaoDeCursos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 
@@ -240,8 +276,6 @@ header{
     border-radius: 5px;
     size: 500px;
     position: absolute;
-    /* left: 33%; */
-    /* top: 1020px; */
     text-align: center;
     color: white;
     font-size: 15px;
@@ -252,60 +286,27 @@ header{
 
 #icones1{
     display: flex;
-    width: 30%;
-    text-align: center;
-    position: relative;
-    top: 100px;
-    left: 480px;
+    justify-content:space-between;
 
 }
 
 #icones2{
     display: flex;
-    width: 30%;
-    text-align: center;
-    position: relative;
-    top: 100px;
-    left: 520px;
+    justify-content: space-between;
 
 }
 
 #icones1 img {
-
     width: 100px;
-
 }
 
 #icones2 img{
     width: 100px;
 }
 
-#praticidade{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 290px;
-}
-#acessivel{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 100px;
-}
-#didatica{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 300px;
-}
-#no-seu-ritmo{
-    padding-top: 20px;
-    padding-bottom: 20px;
 
-}
 
-#icones1 h1, #icones2 h1{
-    color: #C21C44;
-    font-family: "roboto";
-
-}#banner-sobre-nos img{
+#banner-sobre-nos img{
     width: 100%;
     height: auto;
 }
@@ -344,7 +345,7 @@ header{
 }
 
 #icones1{
-    display: flex;
+    
     width: 30%;
     text-align: center;
     position: relative;
@@ -353,36 +354,30 @@ header{
     top: 30%;
     left:30%;
     
-
 }
 
 #icones2{
-    display: flex;
+    
     width: 30%;
     text-align: center;
     position: relative;
     top: 30%;
     left: 30%;
-
 }
 
 #icones1 img {
 
     width: 50%;
     top: 100px;
-    left: 520px;
-    
+    left: 520px;    
 }
 
-#icones1 img {
-    
-    width: 30%;
-    
-
-}
-
-#icones2 img{
+#didatica img{
     width: 60%;
+} 
+
+#no-seu-ritmo img{
+    width: 35%;
 }
 
 #praticidade{
@@ -391,33 +386,41 @@ header{
     padding-right: 60%;
 }
 #acessivel{
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
     padding-right: 80%;
 }
 #didatica{
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-right: 80%;
+    padding-right: 60%;
+    padding-left: 5%;
 }
 #no-seu-ritmo{
 
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+}
 
+#no-seu-ritmo h1{
+    text-align: center;
+    white-space: nowrap;
 }
 
 #icones1 h1, #icones2 h1{
     color: #C21C44;
     font-family: "roboto";
     
-
-
+    
 }
+
+#icones1 p, #icones2 p{
+    font-family: "roboto";
+}
+
+    
+
 
 /* perguntas frequentes*/
 
@@ -462,4 +465,42 @@ header{
     width: 25px;
     padding-left: 80%;
     
+  }
+
+  /* Icones redes sociais  */
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 20%;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 20%;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 20%;
   }
