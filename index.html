@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BEST SONG</title>
 </head>
 <body>
 
-    <header>
-        <img id="img_logo" src="/img/logo.png" alt="logo">
-        <input id="pesquisa_menu" type="text">
-        <nav id="nav">
-            <button id="btn-mobile">Menu</button>
-            <ul id="menu_superior">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="#curso">Cursos</a></li>
-                <li><a href="/sobrenos.html">Sobre</a></li>
-                <li><a href="/contato.html">Contato</a></li>
-            </ul>
+        <header class="navColor d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4  border-bottom" id="navbarSupportedContent">
+            <!-- imagem da logomarca -->
+            <img class="img_logo" src="/img/logo.png" alt="Imagem contendo a logomarca da pagina web Best Song">
+            
+            <!-- Pesquisa de cursos -->
+            <form class=" d-flex col-4" role="search" id="search">
+                <input class="form-control me-1" type="search" placeholder="Procure aqui seu curso" aria-label="Search">
+            </form>
+           
+            <!-- Menu -->
+        <nav
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/index.html" class="nav-link px-2 link-light">Inicio</a></li>
+            <li><a href="/sobrenos.html" class="nav-link px-2 link-light">Sobre</a></li>
+            <li><a href="/contato.html" class="nav-link px-2 link-light">Fale Conosco</a></li>
+          </ul>
         </nav>
-    </header>
+          <!-- Login e Senha -->
+          <div class="col-md-2 text-end">
+            <form class="container-fluid justify-content-start">
+                <button type="button" class="colorText btn btn-dark me-2">Login</button>
+                <button type="button" class="btn btn-light btn-sm ">Cadastrar</button>
+            </form>
+          </div>
+       
+        </header>
+    
     <section id="banner_principal">
         <img src="/img/banner.png" alt="banner principal">
         <h1>APRENDA TOCAR SEU
@@ -111,6 +126,8 @@
         <div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="/app.js"></script>
 </body>
 </html>

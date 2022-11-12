@@ -2,18 +2,31 @@
 body{
     margin: 0px;
     padding: 0px;
+    
 }
 
 header{
-    box-sizing: border-box;
-    background-color: #C21C44;
-    display: flex;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
+   width: 100%;
+   z-index: 10000;
+   position: fixed;
+   
+
+
 }
 
-#img_logo {
+
+.colorButton{
+    background-color: #1D1111;
+}
+
+.colorText{
+    color: #daa520 !important;
+}
+.navColor{
+    background-color: #C21C44;
+}
+
+.img_logo {
     margin-left: 50px;
     width: 100px;
 }
@@ -39,14 +52,15 @@ header{
 }
 
 
-#menu_superior li a{
+.styleMenu{
     text-decoration: none;
     display: block;
     padding: .5rem;
     color: aliceblue;
+    text-transform: uppercase;
 }
 
-#menu_superior li a:hover{
+.styleMenu:hover{
     color: black;
 }
 
@@ -198,7 +212,7 @@ header{
         width: 100%;
         top: 70px;
         right: 0px;
-        background-color: rgb(46, 134, 140);
+        background-color: rgb(66, 90, 92);
         transition: .6s;
         height: 0px;
         z-index: 10000;
