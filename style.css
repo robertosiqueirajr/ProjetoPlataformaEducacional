@@ -5,16 +5,6 @@ body{
     
 }
 
-header{
-   width: 100%;
-   z-index: 10000;
-   position: fixed;
-   
-
-
-}
-
-
 .colorButton{
     background-color: #1D1111;
 }
@@ -109,20 +99,26 @@ header{
 
 .principal h1{
     text-align: center;
-    font-size: 80px;
+    font-size: 4em;
     margin: 0px;
 }
 
 .principal h3{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 300;
     color: #1D1111;
 }
 
    /* Footer */
 
-#rodaPe{
+   footer{
+    background-color: #C21C44;
+    color: aliceblue;
+   }
+
+
+/* #rodaPe{
     background-color: #C21C44;
     display: flex;
     justify-content:space-between;
@@ -156,7 +152,7 @@ header{
 
 #subMenu a:hover{
     color: #19191a;
-}
+} */
 
 
 /* Seleção de cursos*/
@@ -484,12 +480,11 @@ header{
   /* Icones redes sociais  */
 
   .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
+    padding: 5px 5px;
+    display: flex;
+    font-size: 20px;
+    width: 50px; 
     text-decoration: none;
-    margin: 5px 2px;
   }
   
   .fa:hover {
