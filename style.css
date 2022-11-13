@@ -513,3 +513,60 @@ body{
     color: white;
     border-radius: 20%;
   }
+
+  /* Login */
+
+
+  .login {
+    background-color: #C21C44;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 5%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .caixa{
+    display: flex;
+    justify-content:center;
+    
+  }
+
+ .input-login{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    width: 100%;
+    outline: none;
+    padding: 3%;
+
+ }
+
+ .button-login{
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+ }
+
+ button:hover{
+    background-color:darkgray;
+ }
+
+ a:link {
+    color: white;
+    text-decoration: none;
+ }
+
+ a:hover {
+    text-decoration:underline;
+ }
