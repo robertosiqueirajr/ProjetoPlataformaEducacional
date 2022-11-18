@@ -4,14 +4,23 @@ body{
     padding: 0px;
     
 }
-
+a{
+    text-decoration: none ;
+}
 .colorButton{
     background-color: #1D1111;
 }
 
 .colorText{
-    color: #daa520 !important;
+    color: #daa520;
 }
+
+.colorButton{
+    background-color: #C21C44 !important;
+    color: #EDEDED !important;
+
+}
+
 .navColor{
     background-color: #C21C44;
 }
@@ -39,6 +48,39 @@ body{
     position: relative;
     padding: 10px;
     text-transform: uppercase;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: initial;
+}
+
+/* menu resp*/
+
+ @media screen and (max-width: 778px ) {
+    .hide-header{
+        display: none;
+    }
+    .show-button{
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 779px) {
+    .show-button{
+        display: none;
+    }
+
+    #menu{
+        display: block;        
+    }
+} 
+
+.btn-mobile{
+    display: none;
 }
 
 
@@ -103,13 +145,58 @@ body{
     margin: 0px;
 }
 
-.principal h3{
+.colorH3{
     text-align: center;
     font-size: 1.5em;
     font-weight: 300;
     color: #1D1111;
 }
 
+@media screen and (max-width: 778px) {
+    .principal h1{
+        text-align: center;
+        font-size: 2em;
+        margin: 0px;
+    }
+
+    .principal h3{
+        font-size: 1em;
+
+    }
+
+
+}
+
+@media screen and (max-width: 558px){
+    .alignButton{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .spaceButton{
+        margin: 2px;
+    }
+
+    .spaceCol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alignItens{
+        margin: 5px;
+
+    }
+
+}
+
+.houverCard:hover{
+    background-color: #C21C44 !important; 
+}
+
+.fontIcon{
+    font-size: 0.70rem;
+    text-transform: uppercase;
+}
    /* Footer */
 
    footer{
@@ -118,127 +205,12 @@ body{
    }
 
 
-/* #rodaPe{
-    background-color: #C21C44;
-    display: flex;
-    justify-content:space-between;
-    padding-left: 50px;
-    width: auto;
-    height: 200px;
-}
-
-#rodaPe img{
-    padding-top: 50px;
-    width: 10rem;
-    height: 8rem;
-}
-
-#rodaPe h3{
-    color: white;
-    font-size: 20pt;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#subMenu{
-    padding-top: 20px ;
-}
-#subMenu a{
-    text-decoration: none;
-    display: block;
-    padding: .5rem;
-    color: aliceblue
-}
-
-#subMenu a:hover{
-    color: #19191a;
-} */
-
-
-/* Seleção de cursos*/
-
-.selecaoDeCursos{
-    display: flex;
-    padding: 20px 100px 50px 100px;
-    justify-content:space-between;
-}
-.selecaoDeCursos div{
-    border-radius: 5px;
-    color: white;
-    margin: 20px;
-    background-color: #df718b;
-    -webkit-box-shadow: 1px -3px 8px -1px rgba(0,0,0,0.75); 
-    box-shadow: 1px -3px 8px -1px rgba(0,0,0,0.75);
-  
-}
-
-
-.selecaoDeCursos div p{
-    text-align: center;
-}
-
-.selecaoDeCursos div h3{
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-}
-.selecaoDeCursos div img{
-    width: 250px;
-    height: 150px;
-    border-radius: 3px;
-}
-
-.selecaoDeCursos div:hover{
-   transform: scale(1.02);
-}
-
-
 /* media de 800px */
 
 @media(max-width: 800px){
 
     #pesquisa_menu{
         width: 40%;
-    }
-
-    #menu_superior{
-        display: block;
-        position: absolute;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: rgb(66, 90, 92);
-        transition: .6s;
-        height: 0px;
-        z-index: 10000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active #menu_superior{
-        height: 100vh;
-        visibility: visible;
-        overflow: auto;
-
-    }
-
-    #menu_superior li a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid black;
-    }
-
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        margin: 5px;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-
     }
 
     #banner_principal h1{

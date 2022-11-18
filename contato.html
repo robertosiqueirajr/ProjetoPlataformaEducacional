@@ -1,165 +1,207 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- <link rel="stylesheet" href="/style.css"> -->
-  <link href="/style.css" rel="stylesheet">
-  <link href="page.css" rel="stylesheet">
-  </link>
-  <title>BEST SONG</title>
-  
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BEST SONG</title>
 </head>
+<body>
+    <header class=" navColor d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 " id="navbarSupportedContent">
+        <!-- imagem da logomarca -->
+        <img class="img_logo" src="img/logo.png" alt="Imagem contendo a logomarca da pagina web Best Song">
 
-<header>
-  <img id="img_logo" src="/img/logo.png" alt="logo">
-  <input id="pesquisa_menu" type="text">
-  <nav id="nav">
-      <button id="btn-mobile">Menu</button>
-      <ul id="menu_superior">
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="#">Cursos</a></li>
-          <li><a href="/sobrenos.html">Sobre</a></li>
-          <li><a href="/contato.html">Contato</a></li>
+        <form class=" d-flex col-4" role="search" id="search">
+            <input class="form-control me-1" type="search" placeholder="Procure aqui seu curso" aria-label="Search">
+        </form>
+       
+        <!-- Menu -->
+    <nav>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/index.html" class="nav-link px-2 link-light">Inicio</a></li>
+        <li><a href="/sobrenos.html" class="nav-link px-2 link-light">Sobre</a></li>
+        <li><a href="/contato.html" class="nav-link px-2 link-light">Fale Conosco</a></li>
       </ul>
-  </nav>
-</header>
-<body background=img/banner.png>
+    </nav>
+      <!-- Login e cadastro -->
+      <div class="col-md-2 text-end">
+        <form class="container-fluid justify-content-start">
+            <button type="button" class=" btn btn-dark me-2"><a class="colorText" href="/login.html">Login</a> </button>
+            <button type="button" class="btn btn-light btn-sm ">Cadastrar</button>
+        </form>
+       </div>
+    </header>
+        
+        <main id="main" class="container">
 
-  <main id="main">
+            <section id="sobre">
+        
+              <h2>Fale Conosco</h2>
+              <p></p>
+              <form class="row g-3" action="outro.html">
+        
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputtext">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Sobrenome</label>
+                    <input type="Text" class="form-control" id="inputname">
+                </div>
+        
+        
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+        
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+        
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Estado</option>
+                        <option>São Paulo</option>
+                        <option>Piauí</option>
+                        <option>Maranhão</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Espirito Santo</option>
+                        <option>Goiás</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraná</option>
+                        <option>Paraíba</option>
+                        <option>Pernambuco</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>Sergipe</option>
+                        <option>Totantins</option>
+                        <option>DF</option>
+                    </select>
+                </div>
+        
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+        
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+        
+                </div>
+        
+                <div class="quform-recaptcha"
+                    data-config="{&quot;sitekey&quot;:&quot;6Lc3WcIZAAAAAEo20fLe65wxejcmBs89mx7orCbI&quot;,&quot;_version&quot;:&quot;v2&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;image&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;badge&quot;:&quot;bottomright&quot;}">
+                    <div style="width: 304px; height: 78px;">
+                        <div><iframe title="reCAPTCHA"
+                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc3WcIZAAAAAEo20fLe65wxejcmBs89mx7orCbI&amp;co=aHR0cHM6Ly9wb3J0YWwucGkuZ292LmJyOjQ0Mw..&amp;hl=pt-BR&amp;type=image&amp;v=a9s0j4pCVT6gaTEkLiFbtZPH&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=xrw8jvffck1r"
+                                width="304" height="78" role="presentation" name="a-tfche7ydexbq" frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div><iframe style="display: none;"></iframe>
+                </div>
+        
+        
+            </form>
+            </section>
+        
+          </main>
 
-    <section id="sobre">
-
-      <h2>Fale Conosco</h2>
-      <p></p>
-      <!-- <img class="section-image" src="hotdog2.jpeg"> -->
-      <form class="row g-3" action="outro.html">
-
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="inputtext">
-        </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Sobrenome</label>
-            <input type="Text" class="form-control" id="inputname">
-        </div>
-
-
-
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-        <div class="col-md-6">
-            <label for="inputCity" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity">
-        </div>
-
-        <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-                <option selected>Estado</option>
-                <option>São Paulo</option>
-                <option>Piauí</option>
-                <option>Maranhão</option>
-                <option>Acre</option>
-                <option>Alagoas</option>
-                <option>Amapá</option>
-                <option>Amazonas</option>
-                <option>Bahia</option>
-                <option>Ceará</option>
-                <option>Espirito Santo</option>
-                <option>Goiás</option>
-                <option>Mato Grosso</option>
-                <option>Mato Grosso do Sul</option>
-                <option>Minas Gerais</option>
-                <option>Pará</option>
-                <option>Paraná</option>
-                <option>Paraíba</option>
-                <option>Pernambuco</option>
-                <option>Rio de Janeiro</option>
-                <option>Rio Grande do Norte</option>
-                <option>Rio Grande do Sul</option>
-                <option>Rondônia</option>
-                <option>Roraima</option>
-                <option>Santa Catarina</option>
-                <option>Sergipe</option>
-                <option>Totantins</option>
-                <option>DF</option>
-            </select>
-        </div>
-
-        <div class="col-md-2">
-            <label for="inputZip" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="inputZip">
-        </div>
-
-        <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Check me out
-                </label>
-            </div>
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-dark">Enviar</button>
-
-        </div>
-
-        <div class="quform-recaptcha"
-            data-config="{&quot;sitekey&quot;:&quot;6Lc3WcIZAAAAAEo20fLe65wxejcmBs89mx7orCbI&quot;,&quot;_version&quot;:&quot;v2&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;image&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;badge&quot;:&quot;bottomright&quot;}">
-            <div style="width: 304px; height: 78px;">
-                <div><iframe title="reCAPTCHA"
-                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc3WcIZAAAAAEo20fLe65wxejcmBs89mx7orCbI&amp;co=aHR0cHM6Ly9wb3J0YWwucGkuZ292LmJyOjQ0Mw..&amp;hl=pt-BR&amp;type=image&amp;v=a9s0j4pCVT6gaTEkLiFbtZPH&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=xrw8jvffck1r"
-                        width="304" height="78" role="presentation" name="a-tfche7ydexbq" frameborder="0"
-                        scrolling="no"
-                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-            </div><iframe style="display: none;"></iframe>
-        </div>
-
-
-    </form>
+    <!-- Inicio do Footer -->
     </section>
+    <footer class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Menu</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Professores</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Destaques</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Receba novidades no e-mail</h5>
+                <p>Ofertas, noticias e muito mais.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Seu E-mail</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Seu E-mail">
+                  <button class="btn btn-primary" type="button">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-0 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="fa fa-facebook" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#"></use></svg></a></li>
+              <li class="ms-3"><a class="fa fa-twitter" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#"></use></svg></a></li>
+              <li class="ms-3"><a class="fa fa-youtube" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#"></use></svg></a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
 
-  </main>
-
-  <footer id="rodaPe">
-    <div>
-        <h3>Siga nossas redes sociais</h3>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-youtube"></a>
-    </div>
-
-    <div id="subMenu">
-        <a href="#">Contato</a>
-        <a href="#">Sobre</a>
-        <a href="#">Dúvidas frequentes</a>
-        <a href="#">Trabalhe conosco</a>
-        <a href="#">Seja um professor</a>
-    </div>
-        <img src="/img/logo.png" alt="">
-    <div>
-    </div>
-</footer>
-<script src="/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
 </body>
-
 </html>

@@ -1,10 +1,8 @@
-// Menu mobile
-const btnMobile = document.getElementById('btn-mobile')
+// Escolha de cursos CARD
+const aulas = ['violao', 'guitarra', 'violino', 'bateria', 'contraBaixo']
 
-const mobile = () => {
-  const nav = document.getElementById('nav')
-  nav.classList.toggle('active')
+function mostrarAulas(aula){
+    aulas.forEach(item => document.getElementById(item).setAttribute('class', `${item === aula ? 'show' : 'hide'}`))
+    // document.getElementById('violao').setAttribute('class', 'hide')
+    // document.getElementById('guitarra').setAttribute('class', 'show')
 }
-
-btnMobile.addEventListener('click', mobile)
-
