@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BEST SONG</title>
 </head>
 <body>
-
-        <header class=" navColor d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4  border-bottom" id="navbarSupportedContent">
+        <header class=" navColor d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 " id="navbarSupportedContent">
             <!-- imagem da logomarca -->
             <img class="img_logo" src="img/logo.png" alt="Imagem contendo a logomarca da pagina web Best Song">
-            
-            <!-- Pesquisa de cursos -->
+
             <form class=" d-flex col-4" role="search" id="search">
                 <input class="form-control me-1" type="search" placeholder="Procure aqui seu curso" aria-label="Search">
             </form>
@@ -23,95 +21,87 @@
             <!-- Menu -->
         <nav>
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 link-light">Inicio</a></li>
-            <li><a href="sobrenos.html" class="nav-link px-2 link-light">Sobre</a></li>
-            <li><a href="contato.html" class="nav-link px-2 link-light">Fale Conosco</a></li>
+            <li><a href="/index.html" class="nav-link px-2 link-light">Inicio</a></li>
+            <li><a href="/sobrenos.html" class="nav-link px-2 link-light">Sobre</a></li>
+            <li><a href="/contato.html" class="nav-link px-2 link-light">Fale Conosco</a></li>
           </ul>
         </nav>
           <!-- Login e cadastro -->
           <div class="col-md-2 text-end">
             <form class="container-fluid justify-content-start">
-                <button type="button" class="colorText btn btn-dark me-2"><a href="login.html">Login</a> </button>
+                <button type="button" class=" btn btn-dark me-2"><a class="colorText" href="/login.html">Login</a> </button>
                 <button type="button" class="btn btn-light btn-sm ">Cadastrar</button>
             </form>
-          </div>
+           </div>
         </header>
+        
     <section>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div id="bannerMain" class="carousel slide " data-bs-ride="false">
             <div class="carousel-inner">
               <div class="carousel-item active m-0">
                 <img src="img/banner.png" class="d-block w-100" alt="Banner principal com varios instrumentos no canto direito da tela">
               </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
        
     </section>
     <main class="principal">
-        <h1>
+        <h1 class="display-4">
             Os melhores músicos
         <span style="color:#9F2828 ;">em um só lugar.</span>
         </h1>
-        <h3>Escolha o seu instrumento e seu professor. São Mais de 1.500 músicos a sua disposição. </h3>
+        <h3 class="colorH3">Escolha o seu instrumento e seu professor. São Mais de 1.500 músicos a sua disposição. </h3>
 
         <section class="m-5">
-           <div class="container m-3">
+           <div class="container m-3 alignButton" >
             <!-- Inicio do menu de seleção de instrumentos -->
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#violao" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn colorButton spaceButton"   onclick="mostrarAulas('violao')" type="button" data-bs-toggle="collapse" data-bs-target="#violao" aria-expanded="false" aria-controls="violao">
                   Violão
-                </a>
+                </button>
 
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#guitarra" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn colorButton spaceButton" onclick="mostrarAulas('guitarra')" type="button" data-bs-toggle="collapse" data-bs-target="#guitarra" aria-expanded="false" data-bs-target=".multi-collapse"  aria-controls="violao">
                   Guitarra
                 </button>
 
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bateria" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn colorButton spaceButton" onclick="mostrarAulas('bateria')" type="button" data-bs-toggle="collapse" data-bs-target="#bateria" aria-expanded="false" aria-controls="collapseExample">
                     bateria
                 </button>
 
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#contraBaixo" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn colorButton spaceButton" onclick="mostrarAulas('contraBaixo')" type="button" data-bs-toggle="collapse" data-bs-target="#contraBaixo" aria-expanded="false" aria-controls="collapseExample">
                     contrabaixo
                 </button>
 
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#violino" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn colorButton spaceButton" onclick="mostrarAulas('violino')" type="button" data-bs-toggle="collapse" data-bs-target="#violino" aria-expanded="false" aria-controls="collapseExample">
                     violino
                 </button>
             </div>
               <!-- Inicio de Card com seleção de instrumentos -->
-              <div class="collapse" id="violao">
-                <div class="card card-body">
-                   <div class="container d-flex justify-content-between"> 
-                    <div class="card" style="width: 18rem;">
+              <div class="accordion-collapse collapse show" id="violao">
+                <div class="card card-body" style="border:none;">
+                   <div class="container d-flex justify-content-between spaceCol"> 
+                    <div class="card alignItens" style="width: 18rem;">
                         <img src="img/violao.jpg" class="card-img-top" alt="Seleção de curso de violão básico para escolher">
                         <div class="card-body">
                           <h5 class="card-title">Violão Básico</h5>
                           <p class="card-text">Aprenda a tocar seu violão de forma facil.</p>
-                          <a href="#" class="btn btn-primary">Quero Agora</a>
+                          <a href="#" class="btn colorButton">Quero Agora</a>
                         </div>
                       </div>
 
-                      <div class="card" style="width: 18rem;">
+                      <div class="card alignItens" style="width: 18rem;">
                         <img src="img/violao.jpg" class="card-img-top" alt="Seleção de curso de violão básico para escolher">
                         <div class="card-body">
                           <h5 class="card-title">Violão Intermediario</h5>
                           <p class="card-text">Aprenda a tocar seu violão de forma facil.</p>
-                          <a href="#" class="btn btn-primary">Quero Agora</a>
+                          <a href="#" class="btn colorButton">Quero Agora</a>
                         </div>
                       </div>
 
-                      <div class="card" style="width: 18rem;">
+                      <div class="card alignItens" style="width: 18rem;">
                         <img src="img/violao.jpg" class="card-img-top" alt="Seleção de curso de violão básico para escolher">
                         <div class="card-body">
                           <h5 class="card-title">Violão Avançado</h5>
                           <p class="card-text">Aprenda a tocar seu violão de forma facil.</p>
-                          <a href="#" class="btn btn-primary">Quero Agora</a>
+                          <a href="#" class="btn colorButton">Quero Agora</a>
                         </div>
                       </div>
                       </div>
@@ -120,14 +110,14 @@
               </div>
 
               <div class="collapse" id="guitarra">
-                <div class="card card-body">
-                    <div class="container d-flex justify-content-between"> 
+                <div class="card card-body " style="border:none;">
+                    <div class="container d-flex justify-content-between spaceCol"> 
                         <div class="card" style="width: 18rem;">
                             <img src="img/guitarra.jpg" class="card-img-top" alt="Seleção de curso de guitarra básico para escolher">
                             <div class="card-body">
                               <h5 class="card-title">Guitarra Básico</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -136,7 +126,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Guitarra Intermediario</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -145,7 +135,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Guitarra Avançada</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
                           </div>
@@ -153,14 +143,14 @@
               </div>
 
               <div class="collapse" id="bateria">
-                <div class="card card-body">
-                    <div class="container d-flex justify-content-between"> 
+                <div class="card card-body" style="border:none;">
+                    <div class="container d-flex justify-content-between spaceCol"> 
                         <div class="card" style="width: 18rem;">
                             <img src="img/bateria.jpg" class="card-img-top" alt="Seleção de curso de bateria básico para escolher">
                             <div class="card-body">
                               <h5 class="card-title">Bateria Básico</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -169,7 +159,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Bateria Intermediario</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -178,7 +168,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Bateria Avançada</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
                           </div>
@@ -186,14 +176,14 @@
               </div>
 
               <div class="collapse" id="contraBaixo">
-                <div class="card card-body">
-                    <div class="container d-flex justify-content-between"> 
+                <div class="card card-body" style="border:none;">
+                    <div class="container d-flex justify-content-between spaceCol"> 
                         <div class="card" style="width: 18rem;">
                             <img src="img/contrabaixo.jpg" class="card-img-top" alt="Seleção de curso de contra baixo básico para escolher">
                             <div class="card-body">
                               <h5 class="card-title">Contra-Baixo Básico</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -202,7 +192,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Contra-Baixo Intermediario</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -211,7 +201,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Contra-Baixo Avançada</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
                           </div>
@@ -219,14 +209,14 @@
               </div>
 
               <div class="collapse" id="violino">
-                <div class="card card-body">
-                    <div class="container d-flex justify-content-between"> 
+                <div class="card card-body" style="border:none;">
+                    <div class="container d-flex justify-content-between spaceCol"> 
                         <div class="card" style="width: 18rem;">
                             <img src="img/violino.jpg" class="card-img-top" alt="Seleção de curso de violino básico para escolher">
                             <div class="card-body">
                               <h5 class="card-title">Violino Básico</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -235,7 +225,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Violino Intermediario</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
     
@@ -244,7 +234,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Violino Avançada</h5>
                               <p class="card-text">Aprenda a tocar sua de forma facil.</p>
-                              <a href="#" class="btn btn-primary">Quero Agora</a>
+                              <a href="#" class="btn colorButton">Quero Agora</a>
                             </div>
                           </div>
                           </div>
@@ -255,59 +245,151 @@
        
     </main>
 
-    <!-- <section>
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div>
-              </div>
-              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                  <img class="rounded-lg-3" src="/img/instrumentos.jpg" alt="" width="720">
-              </div>
-            </div>
-          </div>
-    </section> -->
+    <!-- Opções de curos em bloco -->
+    <section class="container-fluid row justify-content-center">
+      <h3 class="display-4 colorH3" > Mais opções de Curso </h3>
+      
+      <div class="card text-bg-dark  p-3 m-2 houverCard" style="max-width: 8rem;">
+         <img src="/img/violao.png" alt="">
+         <div class="card-body">
+           <h6 class="fontIcon">Violão</h6>
+         </div>
+       </div>
 
+       <div class="card text-bg-dark  p-3 m-2 houverCard" style="max-width: 8rem;">
+        <img src="/img/guitarra.png" alt="">
+        <div class="card-body">
+          <h6 class="fontIcon">Guitarra</h6>
+        </div>
+      </div>
+      <div class="card text-bg-dark  p-3 m-2 houverCard" style="max-width: 8rem;">
+        <img src="/img/baixo.png" alt="">
+        <div class="card-body">
+          <h6 class="fontIcon">Baixo</h6>
+        </div>
+      </div>
 
-   
+      <div class="card text-bg-dark  p-3 m-2 houverCard" style="max-width: 8rem;">
+       <img src="/img/bateria.png" alt="">
+       <div class="card-body">
+         <h6 class="fontIcon">Bateria</h6>
+       </div>
+     </div>
+
+      <div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+        <img src="/img/canto.png" alt="">
+        <div class="card-body">
+          <h6 class="fontIcon">Canto</h6>
+        </div>
+      </div>
+
+      <div class="card text-bg-dark  p-3 m-2 houverCard" style="max-width: 8rem;">
+       <img src="/img/tecladoIcon.png" alt="">
+       <div class="card-body">
+         <h6 class="fontIcon">Teclado</h6>
+       </div>
+     </div>
+
+     <div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+      <img src="/img/cavaco.png" alt="">
+      <div class="card-body">
+        <h6 class="fontIcon">Cavaco</h6>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark  p-3 m-2 houverCard" style="max-width: 8rem;">
+     <img src="/img/gaita.png" alt="">
+     <div class="card-body">
+       <h6 class="fontIcon">Gaita</h6>
+     </div>
+   </div>
+   <div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+    <img src="/img/flauta.png" alt="">
+    <div class="card-body">
+      <h6 class="fontIcon">Flauta</h6>
+    </div>
+  </div>
+  <div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+    <img src="/img/harpa.png" alt="">
+    <div class="card-body">
+      <h6 class="fontIcon">Harpa</h6>
+    </div>
+  </div>
+
+  <div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+   <img src="/img/piano.png" alt="">
+   <div class="card-body">
+     <h6 class="fontIcon">Piano</h6>
+   </div>
+ </div>
+ <div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+  <img src="/img/sax.png" alt="">
+  <div class="card-body">
+    <h6 class="fontIcon">Saxofone</h6>
+  </div>
+</div>
+</div>
+<div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+  <img src="/img/pandeiro.png" alt="">
+  <div class="card-body">
+    <h6 class="fontIcon">Pandeiro</h6>
+  </div>
+</div>
+
+<div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+ <img src="/img/violino.png" alt="">
+ <div class="card-body">
+   <h6 class="fontIcon">Violino</h6>
+ </div>
+</div>
+<div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+<img src="/img/ukulele.png" alt="">
+<div class="card-body">
+  <h6 class="fontIcon">Ukulele</h6>
+</div>
+</div>
+<div class="card text-bg-dark p-3 m-2 houverCard" style="max-width: 8rem;">
+  <img src="/img/trambone.png" alt="">
+  <div class="card-body">
+    <h6 class="fontIcon">Trambone</h6>
+  </div>
+  </div>
+    </section>
+
+    <!-- Inicio do Footer -->
     <footer class="py-5">
         <div class="container">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Menu</h5>
-              <ul class="nav flex-column colorSection">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted ">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
               </ul>
             </div>
       
             <div class="col-6 col-md-2 mb-3">
               <h5>Professores</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
               </ul>
             </div>
       
             <div class="col-6 col-md-2 mb-3">
               <h5>Destaques</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
               </ul>
             </div>
       
@@ -324,7 +406,7 @@
             </div>
           </div>
       
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-0 border-top">
             <p>© 2022 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="fa fa-facebook" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#"></use></svg></a></li>
@@ -336,6 +418,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>
