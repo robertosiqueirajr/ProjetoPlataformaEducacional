@@ -496,7 +496,7 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 400px;
     padding: 5%;
     margin-top: 30px;
     margin-bottom: 100px;
@@ -536,9 +536,34 @@ a{
 
  a:link {
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
  }
 
  a:hover {
     text-decoration:underline;
  }
+
+ /*Responsividade login*/
+
+ @media screen and (max-width: 600px ) {
+    .login{
+        width: 280px;
+        text-align: center;
+    }
+
+   a:link{
+    text-decoration: none;
+   }
+ }
+
+ @media screen and ( max-width: 1300px ){
+    .login{
+        width: 350px;
+        text-align: center;}
+
+        a:link{
+            text-decoration: none;
+           }
+
+    } 
+ 
