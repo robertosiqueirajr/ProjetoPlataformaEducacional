@@ -1,0 +1,30 @@
+{
+  "name": "projetoplataformaeducacional",
+  "version": "1.0.0",
+  "description": "PROJETO TERA - DESENVOLVER UMA PLATAFORMA DE ENSINO.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertosiqueirajr/ProjetoPlataformaEducacional.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertosiqueirajr/ProjetoPlataformaEducacional/issues"
+  },
+  "homepage": "https://github.com/robertosiqueirajr/ProjetoPlataformaEducacional#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  },
+
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
