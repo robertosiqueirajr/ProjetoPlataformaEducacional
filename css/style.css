@@ -567,3 +567,180 @@ a{
 
     } 
  
+    .foto {
+        background-color: #ccc;
+        display: flex;
+        width: 15%;
+        height: 200px;
+        margin: 10px;
+        margin-left: 30px;
+        align-items: flex-end;
+        justify-content: center;
+        color: black;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+
+    .foto img {
+        height: 100%;
+    }
+
+    .dados h1 {
+        margin: 8px;
+        color: #C21C44;
+    }
+
+    .nomecompleto {
+     background-color: #ccc;
+     color: black;
+     width: 60%;
+     border-radius: 5px;
+     margin: 10px;
+     display: flex;
+     align-items: flex-end;
+     padding: 2px;
+     margin-left: 30px;
+
+    }
+
+    .nascimento {
+        background-color: #ccc;
+        color: black;
+        width: 20%;
+        display: flex;
+        align-items: flex-end;
+        padding: 2px;
+        border-radius: 5px;
+        margin: 8px;
+    }
+
+    .endereco {
+        background-color: #ccc;
+        color: black;
+        width: 90%;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        align-items: flex-end;
+        padding: 2px;
+        margin-left: 30px;
+   
+       }
+
+    .dados1 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .dados2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .email {
+        background-color: #ccc;
+        color: black;
+        width: 45%;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        align-items: flex-end;
+        padding: 2px;
+        margin-left: 30px;
+   
+       }
+
+       .telefone {
+        background-color:#ccc;
+        color: black;
+        width: 45%;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        align-items: flex-end;
+        padding: 2px;
+        margin-left: 30px;
+   
+       }
+
+
+    .cursos {
+     display: flex;
+     justify-content:space-around;
+     margin: 10px;
+    }
+
+    .curso1  img{
+        width: 90%;
+        padding: 5px;
+
+    }
+
+    .curso1 {
+        width: 30%;
+        height: 350px;
+        background-color: #C21C44;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .curso1 :hover {
+        background-color:gray;
+    }
+
+    .curso2 img {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .curso2 {
+        width: 30%;
+        height: 350px;
+        background-color: #C21C44;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .curso2 :hover {
+        background-color:gray;
+    }
+
+    .curso3 img {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .curso3 {
+        width: 30%;
+        height: 350px;
+        background-color: #C21C44;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .curso3 :hover {
+        background-color:gray;
+    }
+
+    .alterar {
+        margin-left: 30px;
+        text-decoration: none;
+        padding-bottom: 5px;
+    }
+
+    .pesquisar {
+        margin: 30px;
+        display: flex;
+        justify-content:left;
+    }
+
+    .dropdown {
+        margin-left: 10px;
+    }
