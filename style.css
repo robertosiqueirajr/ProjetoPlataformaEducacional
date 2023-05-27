@@ -1,27 +1,29 @@
 /* css pagina inicial  */
-body{
+body {
     margin: 0px;
     padding: 0px;
-    
+
 }
-a{
-    text-decoration: none ;
+
+a {
+    text-decoration: none;
 }
-.colorButton{
+
+.colorButton {
     background-color: #1D1111;
 }
 
-.colorText{
+.colorText {
     color: #daa520;
 }
 
-.colorButton{
+.colorButton {
     background-color: #C21C44 !important;
     color: #EDEDED !important;
 
 }
 
-.navColor{
+.navColor {
     background-color: #C21C44;
 }
 
@@ -30,31 +32,31 @@ a{
     width: 100px;
 }
 
-#pesquisa_menu{
+#pesquisa_menu {
     width: 500px;
     height: 35px;
     border-radius: 50px;
     border: 0px;
 }
 
-#menu_superior{
+#menu_superior {
     display: flex;
     list-style: none;
     gap: .5rem;
 
 }
 
-#menu_superior li{
+#menu_superior li {
     position: relative;
     padding: 10px;
     text-transform: uppercase;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.show{
+.show {
     display: initial;
 }
 
@@ -62,31 +64,32 @@ a{
 
 /* menu resp*/
 
- @media screen and (max-width: 778px ) {
-    .hide-header{
+@media screen and (max-width: 778px) {
+    .hide-header {
         display: none;
     }
-    .show-button{
+
+    .show-button {
         display: initial;
     }
 }
 
 @media screen and (min-width: 779px) {
-    .show-button{
+    .show-button {
         display: none;
     }
 
-    #menu{
-        display: block;        
+    #menu {
+        display: block;
     }
-} 
+}
 
-.btn-mobile{
+.btn-mobile {
     display: none;
 }
 
 
-.styleMenu{
+.styleMenu {
     text-decoration: none;
     display: block;
     padding: .5rem;
@@ -94,7 +97,7 @@ a{
     text-transform: uppercase;
 }
 
-.styleMenu:hover{
+.styleMenu:hover {
     color: black;
 }
 
@@ -103,30 +106,30 @@ a{
 }
 
 
-#main{
+#main {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#banner_principal{
+#banner_principal {
     display: flex;
 
 }
 
-#banner_principal img{
+#banner_principal img {
     width: 100%;
     height: 100vh;
 }
 
-#banner_principal h1{
+#banner_principal h1 {
     position: absolute;
     top: 35%;
     right: 40%;
     left: 3%;
-    font-size: 3em ;
+    font-size: 3em;
 }
 
-#banner_principal button{
+#banner_principal button {
     position: absolute;
     background-color: yellow;
     border-radius: 10px;
@@ -134,20 +137,20 @@ a{
     top: 60%;
     right: 40%;
     left: 15%;
-    font-size: 30px ;
+    font-size: 30px;
 }
 
-#banner_principal button:hover{
+#banner_principal button:hover {
     transform: scale(1.2);
 }
 
-.principal h1{
+.principal h1 {
     text-align: center;
     font-size: 4em;
     margin: 0px;
 }
 
-.colorH3{
+.colorH3 {
     text-align: center;
     font-size: 1.5em;
     font-weight: 300;
@@ -155,13 +158,13 @@ a{
 }
 
 @media screen and (max-width: 778px) {
-    .principal h1{
+    .principal h1 {
         text-align: center;
         font-size: 2em;
         margin: 0px;
     }
 
-    .principal h3{
+    .principal h3 {
         font-size: 1em;
 
     }
@@ -169,61 +172,62 @@ a{
 
 }
 
-@media screen and (max-width: 558px){
-    .alignButton{
+@media screen and (max-width: 558px) {
+    .alignButton {
         display: flex;
         flex-direction: column;
     }
-    
-    .spaceButton{
+
+    .spaceButton {
         margin: 2px;
     }
 
-    .spaceCol{
+    .spaceCol {
         display: flex;
         flex-direction: column;
     }
 
-    .alignItens{
+    .alignItens {
         margin: 5px;
 
     }
 
 }
 
-.houverCard:hover{
-    background-color: #C21C44 !important; 
+.houverCard:hover {
+    background-color: #C21C44 !important;
 }
 
-.fontIcon{
+.fontIcon {
     font-size: 0.70rem;
     text-transform: uppercase;
 }
-   /* Footer */
 
-   footer{
+/* Footer */
+
+footer {
     background-color: #C21C44;
     color: aliceblue;
-   }
+}
 
 
 /* media de 800px */
 
-@media(max-width: 800px){
+@media(max-width: 800px) {
 
-    #pesquisa_menu{
+    #pesquisa_menu {
         width: 40%;
     }
 
-    #banner_principal h1{
+    #banner_principal h1 {
         position: absolute;
         top: 35%;
         right: 40%;
         left: 3%;
-        font-size: 2em ;
+        font-size: 2em;
     }
 
-    .selecaoDeCursos{
+    .selecaoDeCursos {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -232,12 +236,12 @@ a{
 
 /*css sobre nós */
 
-#banner-sobre-nos img{
+#banner-sobre-nos img {
     width: 100%;
     height: auto;
 }
 
-#banner-sobre-nos h1{
+#banner-sobre-nos h1 {
     color: #C21C44;
     position: relative;
     text-align: center;
@@ -246,7 +250,7 @@ a{
     font-family: "roboto";
 }
 
-#banner-sobre-nos p{
+#banner-sobre-nos p {
     position: relative;
     padding-left: 80px;
     padding-right: 80px;
@@ -255,7 +259,7 @@ a{
     font-family: "roboto";
 }
 
-#estudar-na-best-song{
+#estudar-na-best-song {
     background-color: #C21C44;
     border-radius: 5px;
     size: 500px;
@@ -268,13 +272,13 @@ a{
     font-family: "roboto";
 }
 
-#icones1{
+#icones1 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
 
-#icones2{
+#icones2 {
     display: flex;
     justify-content: space-between;
 
@@ -284,18 +288,18 @@ a{
     width: 100px;
 }
 
-#icones2 img{
+#icones2 img {
     width: 100px;
 }
 
 
 
-#banner-sobre-nos img{
+#banner-sobre-nos img {
     width: 100%;
     height: auto;
 }
 
-#banner-sobre-nos h1{
+#banner-sobre-nos h1 {
     color: #C21C44;
     position: relative;
     text-align: center;
@@ -304,7 +308,7 @@ a{
     font-family: "roboto";
 }
 
-#banner-sobre-nos p{
+#banner-sobre-nos p {
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
@@ -313,7 +317,7 @@ a{
     font-family: "roboto";
 }
 
-#estudar-na-best-song{
+#estudar-na-best-song {
     background-color: #C21C44;
     border-radius: 5px;
     position: relative;
@@ -328,20 +332,20 @@ a{
     font-family: "roboto";
 }
 
-#icones1{
-    
+#icones1 {
+
     width: 30%;
     text-align: center;
     position: relative;
     top: 30%;
     left: 28%;
     top: 30%;
-    left:30%;
-    
+    left: 30%;
+
 }
 
-#icones2{
-    
+#icones2 {
+
     width: 30%;
     text-align: center;
     position: relative;
@@ -353,57 +357,62 @@ a{
 
     width: 50%;
     top: 100px;
-    left: 520px;    
+    left: 520px;
 }
 
-#didatica img{
+#didatica img {
     width: 60%;
-} 
+}
 
-#no-seu-ritmo img{
+#no-seu-ritmo img {
     width: 35%;
 }
 
-#praticidade{
+#praticidade {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-right: 60%;
 }
-#acessivel{
+
+#acessivel {
     padding-top: 10%;
     padding-bottom: 5%;
     padding-right: 80%;
 }
-#didatica{
+
+#didatica {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-right: 60%;
     padding-left: 5%;
 }
-#no-seu-ritmo{
+
+#no-seu-ritmo {
 
     padding-top: 10%;
     padding-bottom: 5%;
 
 }
 
-#no-seu-ritmo h1{
+#no-seu-ritmo h1 {
     text-align: center;
     white-space: nowrap;
 }
 
-#icones1 h1, #icones2 h1{
+#icones1 h1,
+#icones2 h1 {
     color: #C21C44;
     font-family: "roboto";
-    
-    
+
+
 }
 
-#icones1 p, #icones2 p{
+#icones1 p,
+#icones2 p {
     font-family: "roboto";
 }
 
-    
+
 
 
 /* perguntas frequentes*/
@@ -415,84 +424,85 @@ a{
     border-radius: 5px;
     margin: 2%;
     padding-right: 8%;
-  }
-  
-  .pergunta input,
-  .pergunta .resposta { 
+}
+
+.pergunta input,
+.pergunta .resposta {
     display: none;
     font-family: "roboto";
     padding: 0.5%;
 
 }
-  
-  .pergunta label {
+
+.pergunta label {
     display: inline-block;
     font-weight: bold;
-    margin-bottom: 0,5%;
+    margin-bottom: 0, 5%;
     width: 100%;
     color: #C21C44;
     font-family: "roboto";
-    
-  }
-  
-  .pergunta input:checked ~ .resposta {
-    display: block
-  }
 
-  #duvidas-frequentes h1{
+}
+
+.pergunta input:checked~.resposta {
+    display: block
+}
+
+#duvidas-frequentes h1 {
     font-family: "roboto";
     color: #C21C44;
     margin: 2%;
-  }
+}
 
-  .pergunta img{
+.pergunta img {
     width: 25px;
     padding-left: 80%;
-    
-  }
 
-  /* Icones redes sociais  */
+}
 
-  .fa {
+/* Icones redes sociais  */
+
+.fa {
     padding: 5px 5px;
     display: flex;
     font-size: 20px;
-    width: 50px; 
+    width: 50px;
     text-decoration: none;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
     border-radius: 20%;
-  }
-  
-  .fa-twitter {
+}
+
+.fa-twitter {
     background: #55ACEE;
     color: white;
     border-radius: 20%;
-  }
-  .fa-youtube {
+}
+
+.fa-youtube {
     background: #bb0000;
     color: white;
     border-radius: 20%;
-  }
-  
-  .fa-instagram {
+}
+
+.fa-instagram {
     background: #125688;
     color: white;
     border-radius: 20%;
-  }
+}
 
-  /* Login */
+/* Login */
 
 
-  .login {
-    background-color:black;
+.login {
+    background-color: black;
     border-radius: 15px;
     color: white;
     display: flex;
@@ -502,16 +512,16 @@ a{
     padding: 5%;
     margin-top: 30px;
     margin-bottom: 100px;
-  }
+}
 
 
-  .caixa{
+.caixa {
     display: flex;
-    justify-content:center;
-    
-  }
+    justify-content: center;
 
- .input-login{
+}
+
+.input-login {
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -520,9 +530,9 @@ a{
     outline: none;
     padding: 3%;
 
- }
+}
 
- .button-login{
+.button-login {
     background-color: gray;
     color: white;
     border-radius: 5px;
@@ -531,43 +541,48 @@ a{
     padding: 10px;
     margin-top: 2px;
     margin-bottom: 20px;
- }
+}
 
- button:hover{
-    background-color:darkgray;
- }
+button:hover {
+    background-color: darkgray;
+}
 
- a:link {
+a:link {
     color: white;
     text-decoration: none !important;
- }
+}
 
- a:hover {
-    text-decoration:underline;
- }
+a:hover {
+    text-decoration: underline;
+}
 
- /*Responsividade login*/
+/*Responsividade login*/
 
- @media screen and (max-width: 600px ) {
-    .login{
+@media screen and (max-width: 600px) {
+    .login {
         width: 280px;
         text-align: center;
     }
 
-   a:link{
-    text-decoration: none;
-   }
- }
+    a:link {
+        text-decoration: none;
+    }
+}
 
- @media screen and ( max-width: 1300px ){
-    .login{
+@media screen and (max-width: 1300px) {
+    .login {
         width: 350px;
-        text-align: center;}
+        text-align: center;
+    }
 
-        a:link{
-            text-decoration: none;
-           }
+    a:link {
+        text-decoration: none;
+    }
 
-    } 
+}
 
-  
+/* enviado */
+
+p {
+    color: #bb0000;
+}
